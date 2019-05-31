@@ -17,3 +17,11 @@ jupyter notebook --ip=0.0.0.0 --no-browser
 # navigate to url provided (will need to replace IP)
 # may also need to select kernal corresponding to env above
 ```
+
+## Images
+
+Also need to download:
+- [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip)
+  - Goes in: `<project_root>/dogImages`
+- [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip)
+  - Goes in: `<project_root>/lfw`
