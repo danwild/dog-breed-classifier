@@ -13330,7 +13330,7 @@ There are 8351 total dog images.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tqdm</span> <span class="k">import</span> <span class="n">tqdm</span>
@@ -13353,8 +13353,8 @@ There are 8351 total dog images.
         <span class="n">dog_face_count</span> <span class="o">+=</span> <span class="mi">1</span>
         
         
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;humans correctly detected: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">human_face_count</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">human_files_short</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;dogs incorrectly detected: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">dog_face_count</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">dog_files_short</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;humans correctly detected: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">human_face_count</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">human_files_short</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;dogs incorrectly detected: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">dog_face_count</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">dog_files_short</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13371,8 +13371,8 @@ There are 8351 total dog images.
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>humans correctly detected: 1.0%
-dogs incorrectly detected: 0.09%
+<pre>humans correctly detected: 100.0%
+dogs incorrectly detected: 9.0%
 </pre>
 </div>
 </div>
@@ -13757,7 +13757,7 @@ dogs incorrectly detected: 0.09%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### TODO: Test the performance of the dog_detector function</span>
@@ -13773,8 +13773,8 @@ dogs incorrectly detected: 0.09%
         <span class="n">dog_face_count</span> <span class="o">+=</span> <span class="mi">1</span>
         
         
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;humans incorrectly detected: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">human_face_count</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">human_files_short</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;dogs correctly detected: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">dog_face_count</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">dog_files_short</span><span class="p">))</span> <span class="o">+</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;dogs incorrectly detected in human_files_short: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">human_face_count</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">human_files_short</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;dogs correctly detected in dog_files_short: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">dog_face_count</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">dog_files_short</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13791,8 +13791,8 @@ dogs incorrectly detected: 0.09%
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>humans incorrectly detected: 0.0%
-dogs correctly detected: 1.0%
+<pre>dogs incorrectly detected in human_files_short: 0.0%
+dogs correctly detected in dog_files_short: 100.0%
 </pre>
 </div>
 </div>
@@ -14719,7 +14719,7 @@ Test Accuracy: 12% (108/836)
 <ul>
 <li>I read a <a href="https://cv-tricks.com/cnn/understand-resnet-alexnet-vgg-inception/">quick comparison</a> of some relevant models and decided to try resnet.</li>
 <li>I wanted to try a more complex model than used in previous exercises (e.g. VGG16) so chose <code>resnet50</code>.</li>
-<li>I simply froze the feature detection layers, and swapped out the final linear layer for my own that is mapped to 133 class outputs</li>
+<li>I simply froze the feature detection layers, and swapped out the final linear layer for my own that is mapped to required number of 133 class outputs</li>
 </ul>
 
 </div>
@@ -14986,7 +14986,7 @@ Test Accuracy: 84% (705/836)
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong> (Three possible points for improvement)</p>
-<p>While the testing accuracy is 84% (which is ok I guess), the algorithm performs fairly poorly on various test images that I have taken.</p>
+<p>While the testing accuracy is 84% (which is ok I guess), the algorithm performs fairly poorly on various test images that I have taken on my phone.</p>
 <ol>
 <li>Poor handling of images that contain both humans AND dogs.</li>
 <li>Training could be further augmented - e.g. handle grey scale, blurring or other imperfections.</li>
