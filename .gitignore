@@ -2,3 +2,4 @@ dogImages
 lfw
 __MACOSX
 *.zip
+.ipynb_checkpoints
