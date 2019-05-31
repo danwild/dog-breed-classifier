@@ -8,6 +8,7 @@ Uses [Deep Learning AMI (Ubuntu) v23](https://aws.amazon.com/marketplace/pp/B077
 ```
 # enter provided env
 source activate pytorch_p36
+python -m pip install -r requirements.txt
 
 # quick setup jupyter
 jupyter notebook --generate-config
