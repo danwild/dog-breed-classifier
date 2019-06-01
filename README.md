@@ -1,6 +1,7 @@
 # dog-breed-classifier
 Deep learning exercise with pytorch to identify dog breeds from a picture
 
+![Screenshot](/screenshots/poodle.png?raw=true)
 
 ## Setup notes
 Uses [Deep Learning AMI (Ubuntu) v23](https://aws.amazon.com/marketplace/pp/B077GCH38C) 
