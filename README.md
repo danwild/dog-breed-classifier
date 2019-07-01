@@ -1,6 +1,7 @@
 # dog-breed-classifier [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/danwild/dog-breed-classifier/master)
 Deep learning exercise with pytorch to identify dog breeds from a picture
 
+![Screenshot](/screenshots/poodle.png?raw=true)
 
 ## Setup notes
 I used [Deep Learning AMI (Ubuntu) v23](https://aws.amazon.com/marketplace/pp/B077GCH38C) (to run remotely with CPU only, follow the binder link).
